@@ -9,13 +9,5 @@ const dosis = Dosis({
 });
 
 export default function App({ Component, pageProps }) {
-  return (
-    <main
-      className={`${dosis.variable} font-sans bg-gradient-to-r from-purple-500 to-pink-500 h-screen`}
-    >
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </main>
-  );
+  return <Component {...pageProps} />;
 }
