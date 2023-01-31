@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import WavingHand from '../../public/waving-hand.gif';
+import WavingHand from '../../public/wave-hello.gif';
 import Linkedin from '../../public/icons/linkedin.svg';
 import Github from '../../public/icons/github.svg';
 import Twitter from '../../public/icons/twitter.svg';
