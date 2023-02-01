@@ -7,7 +7,7 @@ import Twitter from '../../public/icons/twitter.svg';
 function Home() {
   return (
     <>
-      <main className="py-48">
+      <main className="flex flex-col place-content-center h-screen max-sm:px-5">
         <article className="flex gap-2 items-center">
           <Image src={WavingHand} alt="Waving Hand" height={40} />
           <h4>Hi, I´m Gustavo!</h4>
