@@ -10,10 +10,10 @@ const dosis = Dosis({
 function Layout({ children }) {
   return (
     <main className={`${dosis.variable} font-sans max-w-4xl mx-auto [body]`}>
-      <header className="">
+      <header>
         <Navbar />
       </header>
-      <main className="">{children}</main>
+      <main>{children}</main>
     </main>
   );
 }

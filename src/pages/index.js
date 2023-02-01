@@ -7,7 +7,7 @@ import Twitter from '../../public/icons/twitter.svg';
 function Home() {
   return (
     <>
-      <section className="py-48">
+      <main className="py-48">
         <article className="flex gap-2 items-center">
           <Image src={WavingHand} alt="Waving Hand" height={40} />
           <h4>Hi, I´m Gustavo!</h4>
@@ -20,7 +20,7 @@ function Home() {
           <Image src={Github} alt="Github Logo" height={30} />
           <Image src={Twitter} alt="Twitter Logo" height={30} />
         </article>
-      </section>
+      </main>
     </>
   );
 }
