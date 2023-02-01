@@ -1,20 +1,20 @@
 import Navbar from '@components/Navbar';
-import Head from 'next/head';
+import { Dosis } from '@next/font/google';
+
+const dosis = Dosis({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '700', '800'],
+  variable: '--font-dosis',
+});
 
 function Layout({ children }) {
   return (
-    <>
-      <Head>
-        <title>Portfolio | gustavoylc</title>
-        <meta name="description" content="Portfolio by gustavoylc" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <header className="mx-52">
+    <main className={`${dosis.variable} font-sans max-w-4xl mx-auto [body]`}>
+      <header className="">
         <Navbar />
       </header>
-      <main className="mx-52">{children}</main>
-    </>
+      <main className="">{children}</main>
+    </main>
   );
 }
 

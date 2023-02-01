@@ -1,13 +1,20 @@
 import '@/styles/globals.css';
-import { Dosis } from '@next/font/google';
+
+import Head from 'next/head';
 import Layout from './Layout';
 
-const dosis = Dosis({
-  subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '700', '800'],
-  variable: '--font-dosis',
-});
-
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>Portfolio | gustavoylc</title>
+        <meta name="description" content="Portfolio by gustavoylc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }
