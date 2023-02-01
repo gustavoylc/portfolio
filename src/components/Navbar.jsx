@@ -56,6 +56,7 @@ function Navbar() {
             easing="ease-in"
             size={20}
           />
+          {isOpen}
         </div>
       </nav>
     </div>
