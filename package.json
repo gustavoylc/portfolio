@@ -11,10 +11,13 @@
   "dependencies": {
     "@next/font": "13.1.5",
     "eslint-config-next": "13.1.5",
+    "framer-motion": "9.0.1",
     "hamburger-react": "2.5.0",
     "next": "13.1.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-simple-typewriter": "5.0.1",
+    "react-social-icons": "5.15.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.4.2",
