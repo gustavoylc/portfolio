@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
@@ -6,32 +7,47 @@ import WavingHand from '../../public/icons/waving-hand.svg';
 function Home() {
   const [text] = useTypewriter({
     words: [
-      'Gustavo!',
-      'Software Engineer',
-      'Fullstack Javascript Developer',
-      'React Developer',
-      'Node Developer',
-      'Frontend Developer',
-      'Backend Developer',
+      "Hi, I'm Gustavo!",
+      'I love coding, would you like to join me?',
+      "Let's start again",
+      "{ greetings: 'Hi, I'm Gustavo!' }",
     ],
-    loop: true,
-    delaySpeed: 3000,
+    loop: 1,
+    delaySpeed: 1000,
   });
   return (
     <>
-      <section className="flex flex-col place-content-center h-screen max-sm:px-5 gap-5">
-        <article className="flex gap-2 items-center">
+      <motion.section
+        className="flex flex-col place-content-center gap-3 h-screen"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              ease: 'easeIn',
+            },
+          },
+        }}
+      >
+        <article className="flex gap-4 items-center">
           <Image src={WavingHand} alt="Waving Hand" height={40} />
           <h4>
-            Hi, I´m <span>{text}</span>
-            <Cursor cursorColor="#6ac0f3" />
+            <span>{text}</span>
+            <Cursor cursorColor="#6ac0f3" cursorStyle="_" />
           </h4>
         </article>
         <article>
           <h3>Fullstack Javascript Developer</h3>
         </article>
         <article className="text-xl">
-          <p>I love programming like a monster</p>
+          <p>
+            My goal as a Fullstack JavaScript developer is to solve problems and
+            create efficient and effective solutions through technology. Take a
+            look at my portfolio to learn more about my work.
+          </p>
         </article>
         <article className="">
           <SocialIcon
@@ -56,9 +72,8 @@ function Home() {
             rel="noopener noreferrer"
           />
         </article>
-      </section>
+      </motion.section>
     </>
   );
 }
-// 025b92
 export default Home;
