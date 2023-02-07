@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Sling as Hamburger } from 'hamburger-react';
 import Logo from '../../public/logo.svg';
+import NavLink from './NavLink';
 
 const routes = [
   {
@@ -21,7 +22,7 @@ const routes = [
   },
 ];
 
-function Navbar() {
+function NavBar() {
   const router = useRouter();
   const [isOpen, setOpen] = useState(false);
   const currentRoute = router.pathname;
@@ -29,12 +30,12 @@ function Navbar() {
     setOpen((prev) => !prev);
   };
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-between max-w-6xl items-center mx-auto py-2">
+    <nav className="fixed top-0 left-0 right-0 flex justify-between max-w-5xl items-center mx-auto p-2 py-4 md:px-20 backdrop-blur ">
       <motion.div
-        initial={{ x: -500, opacity: 0, scale: 0.5 }}
+        initial={{ x: -400, opacity: 0, scale: 0.8 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.2 }}
-        className="px-3"
+        className="px-2 md:px-0"
       >
         <Link href="/">
           <Image
@@ -49,28 +50,23 @@ function Navbar() {
       </motion.div>
       <motion.ul
         className="md:flex md:gap-5 md:items-center text-xl hidden"
-        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        initial={{ x: 400, opacity: 0, scale: 0.8 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.2 }}
       >
         {routes.map((route) => (
           <li key={route.text}>
-            <Link
+            <NavLink
               href={route.to}
-              className={
-                currentRoute === route.to
-                  ? 'text-blue-500 ease-in duration-150 hover:text-blue-300 hover:ease-in hover:duration-200'
-                  : 'hover:text-blue-300 hover:ease-in hover:duration-200'
-              }
-            >
-              {route.text}
-            </Link>
+              text={route.text}
+              isActive={currentRoute === route.to}
+            />
           </li>
         ))}
       </motion.ul>
       <motion.div
         className="md:hidden"
-        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        initial={{ x: 400, opacity: 0, scale: 0.8 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.2 }}
       >
@@ -86,4 +82,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
