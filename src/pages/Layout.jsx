@@ -1,4 +1,4 @@
-import Navbar from '@components/Navbar';
+import NavBar from '@components/NavBar';
 import { Dosis } from '@next/font/google';
 
 const dosis = Dosis({
@@ -11,11 +11,10 @@ function Layout({ children }) {
   return (
     <main className={`${dosis.variable} font-sans `}>
       <header>
-        <Navbar />
+        <NavBar />
       </header>
-      <main>{children}</main>
+      <main className="px-5 max-w-5xl mx-auto md:px-20">{children}</main>
     </main>
   );
 }
-// max-sm:max-w-lg max-md:max-w-xl max-lg:max-w-xl lg:max-w-4xl  mx-auto
 export default Layout;
