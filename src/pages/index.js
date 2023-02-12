@@ -9,7 +9,7 @@ function Home() {
   const [text] = useTypewriter({
     words: [
       "Hi, I'm Gustavo!",
-      'I love coding, please join me',
+      'I love coding, please join me!',
       "Let's start again",
       '{ greeting: "Hi, I\'m Gustavo!" }',
     ],
@@ -32,7 +32,7 @@ function Home() {
           },
         },
       }}
-      className="grid sm:content-center sm:justify-items-center sm:items-center gap-5 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr] pt-28 sm:pt-0"
+      className="grid sm:content-center sm:justify-items-center sm:items-center gap-5 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr] pt-28 md:pt-0"
     >
       <section className="flex flex-col gap-8">
         <article className="flex items-center gap-4">
