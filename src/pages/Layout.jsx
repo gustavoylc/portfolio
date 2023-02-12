@@ -13,7 +13,10 @@ function Layout({ children }) {
       <header>
         <NavBar />
       </header>
-      <main className="px-5 max-w-5xl mx-auto md:px-20 pt-24 pb-5 md:py-0 md:short:pt-24 md:tall:py-0">
+      <main
+        className="px-5 max-w-5xl mx-auto md:px-20 pt-32 pb-5 
+                   md:py-0 md:short:pt-32 md:tall:py-0"
+      >
         {children}
       </main>
     </main>
