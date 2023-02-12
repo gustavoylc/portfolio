@@ -34,7 +34,7 @@ function Home() {
       }}
       className="grid sm:content-center sm:justify-items-center sm:items-center gap-5 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr] pt-28 lg:pt-0"
     >
-      <section className="flex flex-col gap-8">
+      <section className="flex flex-col gap-5 mb-4">
         <article className="flex items-center gap-4">
           <Image src={WavingHand} alt="Waving Hand" height={40} />
           <h4>
