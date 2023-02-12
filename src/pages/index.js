@@ -9,9 +9,9 @@ function Home() {
   const [text] = useTypewriter({
     words: [
       "Hi, I'm Gustavo!",
-      'I love coding, would you like to join me?',
+      'I love coding, please join me',
       "Let's start again",
-      '{ greetings: "Hi, I\'m Gustavo!" }',
+      '{ greeting: "Hi, I\'m Gustavo!" }',
     ],
     loop: 1,
     delaySpeed: 1000,

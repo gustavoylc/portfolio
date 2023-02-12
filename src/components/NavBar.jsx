@@ -34,7 +34,7 @@ function NavBar() {
     setOpen((prev) => !prev);
   };
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-between max-w-5xl items-center mx-auto p-2 py-4 md:px-20 backdrop-blur ">
+    <nav className="fixed top-0 left-0 right-0 flex justify-between max-w-5xl items-center mx-auto p-2 py-4 md:px-20 backdrop-blur z-10">
       <motion.div
         initial={{ x: -400, opacity: 0, scale: 0.8 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
