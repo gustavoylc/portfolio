@@ -16,6 +16,13 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-dosis)', ...fontFamily.sans],
       },
+      gridTemplateColumns: {
+        15: 'repeat(auto-fit, minmax(300px, 1fr))',
+      },
+      screens: {
+        xsm: '320px',
+        // => @media (min-width: 320px) { ... }
+      },
     },
   },
   plugins: [
