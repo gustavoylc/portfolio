@@ -16,7 +16,7 @@ function About() {
           },
         },
       }}
-      className="h-screen flex flex-col sm:place-content-center pt-28 md:pt-0"
+      className="h-screen flex flex-col sm:place-content-center pt-28 lg:pt-0"
     >
       <h1 className="text-[#3da6e5]">About</h1>
       <article className="grid grid-cols-15 gap-10 sm:grid-cols-[2fr_1fr] justify-items-center">
