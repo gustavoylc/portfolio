@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function About() {
   return (
@@ -15,22 +16,22 @@ function About() {
           },
         },
       }}
-      className="h-screen grid place-items-center grid-cols-[2fr_1fr] gap-8"
+      className="h-screen flex flex-col sm:place-content-center pt-16 sm:pt-0"
     >
-      <h4>
-        I am a software engineer, I have specialized in Javascript and its
-        related technologies, both frontend and backend. I am passionate about
-        problem-solving and creating personalized, effective, and scalable
-        solutions for clients. In my free time, I enjoy learning new
-        technologies and improving my skills.
-      </h4>
-      <div>
-        <h4>Skills</h4>
+      <h1 className="text-[#3da6e5]">About</h1>
+      <article className="grid grid-cols-15 gap-10 sm:grid-cols-[2fr_1fr] justify-items-center">
         <h5>
-          HTML CSS Javascript Typescript React Redux Sass Tailwindcss MUI Nodejs
-          Nextjs Express MongoDB Mysql Postgres Docker
+          I am a software engineer, I have specialized in Javascript and its
+          related technologies, frontend and backend. I am passionate about
+          problem solving and creating personalized, effective, and scalable
+          solutions. In my free time, I enjoy learning new technologies and
+          improving my skills.
         </h5>
-      </div>
+
+        <Link href="/pdf/cv.pdf" target="_blank" download="gustavoylc-cv.pdf">
+          <h4>Download CV</h4>
+        </Link>
+      </article>
     </motion.div>
   );
 }
