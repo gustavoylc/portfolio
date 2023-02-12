@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { SocialIcon } from 'react-social-icons';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import { SocialIcon } from 'react-social-icons';
+import socialNetworks from '@/utils/socialNetworks';
 import WavingHand from '../../public/icons/waving-hand.svg';
 import Perfil from '../../public/perfil.png';
 
@@ -32,7 +33,7 @@ function Home() {
           },
         },
       }}
-      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-12 sm:grid-cols-[2fr_1fr]"
+      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-12 sm:grid-cols-[2fr_1fr] md:h-screen md:items-center"
     >
       <section className="flex flex-col gap-6">
         <article className="flex items-center gap-4">
@@ -55,7 +56,7 @@ function Home() {
           </p>
         </article>
       </section>
-      <section className="flex flex-col gap-2">
+      <section className="flex flex-col gap-2 place-items-center">
         <Image
           src={Perfil}
           alt="Perfil photo"
@@ -63,30 +64,17 @@ function Home() {
           className="rounded-full flex justify-items-center w-40 sm:w-56"
         />
         <article>
-          <SocialIcon
-            url="https://www.linkedin.com/in/gustavoylc/"
-            bgColor="transparent"
-            fgColor="#3da6e5"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-gray-900 rounded-full"
-          />
-          <SocialIcon
-            url="https://github.com/gustavoylc"
-            bgColor="transparent"
-            fgColor="#3da6e5"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-gray-900 rounded-full"
-          />
-          <SocialIcon
-            url="https://twitter.com/gustavoylc"
-            bgColor="transparent"
-            fgColor="#3da6e5"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-gray-900 rounded-full"
-          />
+          {socialNetworks.map((socialNetwork) => (
+            <SocialIcon
+              key={socialNetwork.name}
+              url={socialNetwork.url}
+              bgColor="transparent"
+              fgColor="#3da6e5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:bg-gray-900 rounded-full"
+            />
+          ))}
         </article>
       </section>
     </motion.div>
