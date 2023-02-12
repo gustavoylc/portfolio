@@ -62,7 +62,7 @@ function Home() {
           width={240}
           className="rounded-full flex justify-items-center w-40 sm:w-56"
         />
-        <article className="pb-6 sm:pb-0 ">
+        <article className="pb-4 sm:pb-0 ">
           <SocialIcon
             url="https://www.linkedin.com/in/gustavoylc/"
             bgColor="transparent"
