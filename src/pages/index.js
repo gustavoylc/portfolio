@@ -32,7 +32,7 @@ function Home() {
           },
         },
       }}
-      className="grid sm:content-center sm:justify-items-center sm:items-center gap-5 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr] pt-28 md:pt-0"
+      className="grid sm:content-center sm:justify-items-center sm:items-center gap-5 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr] pt-28"
     >
       <section className="flex flex-col gap-8">
         <article className="flex items-center gap-4">
