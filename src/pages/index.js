@@ -32,7 +32,7 @@ function Home() {
           },
         },
       }}
-      className="grid content-center justify-items-center items-center gap-10 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr]"
+      className="grid justify-items-center h-screen grid-cols-15 sm:grid-cols-[2fr_1fr]"
     >
       <section className="flex flex-col gap-4">
         <article className="flex items-center gap-4">
@@ -55,7 +55,7 @@ function Home() {
           </p>
         </article>
       </section>
-      <section className="flex flex-col gap-2 place-items-center">
+      <section className="flex flex-col gap-2">
         <Image
           src={Perfil}
           alt="Perfil photo"

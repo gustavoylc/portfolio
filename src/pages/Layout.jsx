@@ -13,7 +13,7 @@ function Layout({ children }) {
       <header>
         <NavBar />
       </header>
-      <main className="px-5 max-w-5xl mx-auto md:px-20 py-16 pb-5">
+      <main className="px-5 max-w-5xl mx-auto md:px-20 pt-28 pb-5">
         {children}
       </main>
     </main>
