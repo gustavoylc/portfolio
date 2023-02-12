@@ -33,7 +33,7 @@ function Home() {
           },
         },
       }}
-      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-12 sm:grid-cols-[2fr_1fr] md:h-screen md:items-center"
+      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-12 sm:grid-cols-[2fr_1fr] lg:h-screen lg:items-center"
     >
       <section className="flex flex-col gap-6">
         <article className="flex items-center gap-4">
