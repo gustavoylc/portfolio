@@ -5,11 +5,11 @@ function NavLink({ href, text, isActive }) {
     <Link
       href={href}
       className={`
-              ease-in duration-150 hover:text-blue-300 hover:ease-in hover:duration-200
+              ease-in duration-150 hover:text-white hover:ease-in hover:duration-100
                ${
                  isActive
                    ? 'text-blue-500 '
-                   : 'hover:text-blue-300 hover:ease-in hover:duration-200'
+                   : 'hover:text-white hover:ease-in hover:duration-100'
                }`}
     >
       {text}
