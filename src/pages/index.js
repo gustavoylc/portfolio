@@ -32,7 +32,7 @@ function Home() {
           },
         },
       }}
-      className="grid justify-items-center h-screen grid-cols-15 sm:grid-cols-[2fr_1fr]"
+      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-10 sm:grid-cols-[2fr_1fr]"
     >
       <section className="flex flex-col gap-4">
         <article className="flex items-center gap-4">
