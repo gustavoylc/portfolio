@@ -32,9 +32,9 @@ function Home() {
           },
         },
       }}
-      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-10 sm:grid-cols-[2fr_1fr]"
+      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-12 sm:grid-cols-[2fr_1fr]"
     >
-      <section className="flex flex-col gap-4">
+      <section className="flex flex-col gap-6">
         <article className="flex items-center gap-4">
           <Image src={WavingHand} alt="Waving Hand" height={40} />
           <h4>
