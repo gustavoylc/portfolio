@@ -33,8 +33,10 @@ function Home() {
           },
         },
       }}
-      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-12 sm:grid-cols-[2fr_1fr] lg:h-screen lg:items-center"
+      className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-10 sm:grid-cols-[2fr_1fr] 
+      md:h-screen md:items-center md:short:h-full md:short:items-start md:tall:h-screen md:tall:items-center"
     >
+      {/*  */}
       <section className="flex flex-col gap-6">
         <article className="flex items-center gap-4">
           <Image src={WavingHand} alt="Waving Hand" height={40} />
@@ -56,7 +58,7 @@ function Home() {
           </p>
         </article>
       </section>
-      <section className="flex flex-col gap-2 place-items-center">
+      <section className="flex flex-col gap-2 place-items-center self-start sm:self-center">
         <Image
           src={Perfil}
           alt="Perfil photo"
