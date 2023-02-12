@@ -13,9 +13,7 @@ function Layout({ children }) {
       <header>
         <NavBar />
       </header>
-      <main className="px-5 max-w-5xl mx-auto md:px-20 relative">
-        {children}
-      </main>
+      <main className="px-5 max-w-5xl mx-auto md:px-20 pt-32 pb-20">{children}</main>
     </main>
   );
 }

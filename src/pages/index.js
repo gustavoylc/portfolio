@@ -32,7 +32,7 @@ function Home() {
           },
         },
       }}
-      className="grid content-center justify-items-center items-center gap-10 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr] mt-28 lg:mt-0"
+      className="grid content-center justify-items-center items-center gap-10 h-screen grid-cols-15 sm:grid-cols-[2fr_1fr]"
     >
       <section className="flex flex-col gap-4">
         <article className="flex items-center gap-4">
@@ -62,7 +62,7 @@ function Home() {
           width={240}
           className="rounded-full flex justify-items-center w-40 sm:w-56"
         />
-        <article className="pb-4 sm:pb-0 ">
+        <article>
           <SocialIcon
             url="https://www.linkedin.com/in/gustavoylc/"
             bgColor="transparent"
