@@ -34,8 +34,11 @@ function Home() {
         },
       }}
       className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-10 sm:grid-cols-[2fr_1fr] 
-                  md:h-screen md:items-center md:short:h-full md:short:items-start md:tall:h-screen 
-                  md:tall:items-center"
+                  md:h-screen md:items-center 
+                  md:short:h-full md:short:items-start 
+                  md:tall:h-screen md:tall:items-center
+                  lg:short:h-full lg:short:items-start
+                  lg:tall:h-screen lg:tall:items-center"
     >
       {/*  */}
       <section className="flex flex-col gap-6">

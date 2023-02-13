@@ -22,6 +22,10 @@ module.exports = {
       screens: {
         xsm: '320px',
         // => @media (min-width: 320px) { ... }
+        short: { raw: '(min-height: 100px)' },
+        // => @media (min-height: 100px) { ... }
+        tall: { raw: '(min-height: 450px)' },
+        // => @media (min-height: 450px) { ... }
       },
     },
   },
