@@ -17,7 +17,6 @@ function contact() {
         },
       }}
     >
-      <h1 className="text-[#3da6e5]">Get In Touch</h1>
       <ContactMe />
     </motion.div>
   );
