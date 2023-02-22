@@ -1,5 +1,7 @@
 export const CSSIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     viewBox="0 0 256 361"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
@@ -27,6 +29,8 @@ export const CSSIcon = (props) => (
 
 export const DockerIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 185"
     xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +46,8 @@ export const DockerIcon = (props) => (
 
 export const ExpressIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 512 149"
     xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +63,8 @@ export const ExpressIcon = (props) => (
 
 export const HTMLIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 361"
     xmlns="http://www.w3.org/2000/svg"
@@ -84,6 +92,8 @@ export const HTMLIcon = (props) => (
 
 export const JavascriptIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 256"
     xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +107,8 @@ export const JavascriptIcon = (props) => (
 
 export const MaterialUIIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 222"
     xmlns="http://www.w3.org/2000/svg"
@@ -112,6 +124,8 @@ export const MaterialUIIcon = (props) => (
 
 export const MongoDBIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     viewBox="0 0 256 549"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
@@ -127,6 +141,8 @@ export const MongoDBIcon = (props) => (
 
 export const MySQLIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     viewBox="0 0 256 252"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
@@ -146,6 +162,8 @@ export const MySQLIcon = (props) => (
 
 export const NextJSIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     viewBox="0 0 512 104"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
@@ -161,6 +179,8 @@ export const NextJSIcon = (props) => (
 
 export const NodeJSIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 289"
     xmlns="http://www.w3.org/2000/svg"
@@ -176,6 +196,8 @@ export const NodeJSIcon = (props) => (
 
 export const PostgreSQLIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 264"
     xmlns="http://www.w3.org/2000/svg"
@@ -200,6 +222,8 @@ export const PostgreSQLIcon = (props) => (
 
 export const ReactIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 228"
     xmlns="http://www.w3.org/2000/svg"
@@ -215,6 +239,8 @@ export const ReactIcon = (props) => (
 
 export const ReduxIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 244"
     xmlns="http://www.w3.org/2000/svg"
@@ -230,6 +256,8 @@ export const ReduxIcon = (props) => (
 
 export const SassIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 192"
     xmlns="http://www.w3.org/2000/svg"
@@ -245,6 +273,8 @@ export const SassIcon = (props) => (
 
 export const TailwindCSSIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 154"
     xmlns="http://www.w3.org/2000/svg"
@@ -266,6 +296,8 @@ export const TailwindCSSIcon = (props) => (
 
 export const TypescriptIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 256 256"
     xmlns="http://www.w3.org/2000/svg"
@@ -285,6 +317,8 @@ export const TypescriptIcon = (props) => (
 
 export const SequelizeIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     viewBox="0 0 256 296"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
@@ -404,6 +438,8 @@ export const SequelizeIcon = (props) => (
 
 export const GitIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     viewBox="0 0 256 256"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
@@ -419,6 +455,8 @@ export const GitIcon = (props) => (
 
 export const WavingHandIcon = (props) => (
   <svg
+    width="50"
+    height="80"
     {...props}
     viewBox="0 0 36 36"
     xmlns="http://www.w3.org/2000/svg"
