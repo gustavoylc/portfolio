@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import { WavingHandIcon } from '@components/Icons';
 import { SocialIcon } from 'react-social-icons';
 import socialNetworks from '@/utils/socialNetworks';
-import WavingHand from '../../public/icons/waving-hand.svg';
 import Perfil from '../../public/perfil.png';
 
 function Home() {
@@ -35,10 +35,9 @@ function Home() {
       }}
       className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-10 sm:grid-cols-[2fr_1fr]"
     >
-      {/*  */}
       <section className="flex flex-col gap-6">
-        <article className="flex items-center gap-4">
-          <Image src={WavingHand} alt="Waving Hand" height={40} />
+        <article className="flex items-center gap-4 text-3xl">
+          <WavingHandIcon height="50" />
           <h4>
             <span>{text}</span>
             <Cursor cursorColor="#6ac0f3" cursorStyle="_" />
@@ -58,12 +57,23 @@ function Home() {
         </article>
       </section>
       <section className="flex flex-col gap-2 place-items-center self-start sm:self-center">
-        <Image
-          src={Perfil}
-          alt="Perfil photo"
-          width={240}
-          className="rounded-full flex justify-items-center w-40 sm:w-56"
-        />
+        <motion.div
+          animate={{
+            scale: [1.3, 1],
+          }}
+          transition={{
+            duration: 0.5,
+            ease: 'easeInOut',
+            times: [0, 1],
+          }}
+        >
+          <Image
+            src={Perfil}
+            alt="Perfil photo"
+            width={240}
+            className="rounded-full flex justify-items-center w-40 sm:w-56"
+          />
+        </motion.div>
         <article>
           {socialNetworks.map((socialNetwork) => (
             <SocialIcon
