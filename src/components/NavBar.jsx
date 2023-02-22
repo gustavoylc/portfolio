@@ -42,14 +42,7 @@ function NavBar() {
         className="px-2 md:px-0"
       >
         <Link href="/">
-          <Image
-            src={Logo}
-            alt="Gustavo's Logo"
-            width={40}
-            initial={{ x: 500, opacity: 0, scale: 0.5 }}
-            animate={{ x: 0, opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2 }}
-          />
+          <Image src={Logo} alt="Gustavo's Logo" width={40} />
         </Link>
       </motion.div>
       <motion.ul
