@@ -47,7 +47,7 @@ const ContactMe = () => (
               <Image src={Logo} alt="Gustavo's Logo" width={120} />
             </motion.div>
             <p className="text-xl mt-16 grid place-content-center place-items-center">
-              Loading
+              Sending
             </p>
           </div>
         )}
@@ -65,7 +65,7 @@ const ContactMe = () => (
         />
         <div>
           <h1 className="text-[#3da6e5]">Get In Touch</h1>
-          <Form className="max-w-lg  text-white">
+          <Form className="max-w-lg text-white">
             <div className="flex flex-col gap-6 ">
               <div>
                 <label className="block font-bold mb-2" htmlFor="name">
