@@ -44,15 +44,15 @@ function Home() {
           </h4>
         </article>
         <article>
-          <p className="font-light text-[#3da6e5] text-4xl sm:text-5xl">
-            Fullstack Javascript Developer
+          <p className="font-light text-transparent bg-clip-text bg-gradient-to-r from-[#3da6e5] to-pink-500 text-4xl sm:text-6xl font-black">
+            Frontend Developer
           </p>
         </article>
         <article className="text-xl">
           <p className="leading-relaxed">
-            My goal as a Fullstack JavaScript developer is to solve problems and
-            create efficient and effective solutions through technology. Take a
-            look at my portfolio to learn more about my work.
+            My goal as a Frontend Developer is to solve problems and create
+            efficient and effective solutions through technology. Take a look at
+            my portfolio to learn more about my work.
           </p>
         </article>
       </section>
