@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+// const { fontFamily } = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
 
@@ -14,7 +14,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-dosis)', ...fontFamily.sans],
+        sans: ['var(--font-poppins)'],
       },
       gridTemplateColumns: {
         15: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -26,10 +26,12 @@ module.exports = {
         // => @media (min-height: 100px) { ... }
         tall: { raw: '(min-height: 450px)' },
         // => @media (min-height: 450px) { ... }
+        xsdevice: { raw: '(min-width: 320px) and (max-width: 480px)' },
       },
     },
   },
   plugins: [
+    // eslint-disable-next-line func-names
     plugin(function ({ addBase, theme }) {
       addBase({
         h1: { fontSize: theme('fontSize.5xl') },
