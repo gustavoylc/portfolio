@@ -11,7 +11,7 @@ function Home() {
     words: [
       "Hi, I'm Gustavo!",
       'I love coding, please join me!',
-      "Let's start again",
+      "Let's start again!",
       '{ greeting: "Hi, I\'m Gustavo!" }',
     ],
     loop: 1,
@@ -36,20 +36,20 @@ function Home() {
       className="grid justify-items-center grid-rows-2 sm:grid-rows-1 gap-10 sm:grid-cols-[2fr_1fr]"
     >
       <section className="flex flex-col gap-6">
-        <article className="flex items-center gap-4 text-3xl">
+        <article className="flex items-center gap-4">
           <WavingHandIcon height="50" />
           <h4>
-            <span>{text}</span>
+            <span className="text-lg">{text}</span>
             <Cursor cursorColor="#6ac0f3" cursorStyle="_" />
           </h4>
         </article>
         <article>
-          <p className="font-light text-transparent bg-clip-text bg-gradient-to-r from-[#3da6e5] to-pink-500 text-4xl sm:text-6xl font-black">
+          <p className="font-light text-transparent bg-clip-text bg-gradient-to-r from-[#3da6e5] via-pink-700 to-sky-700 text-4xl sm:text-6xl font-extrabold">
             Frontend Developer
           </p>
         </article>
-        <article className="text-xl">
-          <p className="leading-relaxed">
+        <article className="">
+          <p className="leading-7">
             My goal as a Frontend Developer is to solve problems and create
             efficient and effective solutions through technology. Take a look at
             my portfolio to learn more about my work.
