@@ -46,7 +46,7 @@ const ContactMe = () => (
             >
               <Image src={Logo} alt="Gustavo's Logo" width={120} />
             </motion.div>
-            <p className="text-xl mt-16 grid place-content-center place-items-center">
+            <p className="mt-16 grid place-content-center place-items-center">
               Sending
             </p>
           </div>

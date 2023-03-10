@@ -20,13 +20,12 @@ function About() {
     >
       <h1 className="text-[#3da6e5]">About</h1>
       <article className="grid grid-rows-[1fr_100px] sm:grid-rows-1 gap-16 sm:grid-cols-[2fr_1fr] justify-items-center pb-4">
-        <h5>
-          I am a software engineer, I have specialized in Javascript and its
-          related technologies, frontend and backend. I am passionate about
-          problem solving and creating personalized, effective, and scalable
-          solutions. In my free time, I enjoy learning new technologies and
-          improving my skills.
-        </h5>
+        <p className="leading-7 ">
+          I am a software engineer and I have specialized in frontend
+          technologies. I am passionate about problem solving and creating
+          personalized, effective, and scalable solutions. In my free time, I
+          enjoy learning new technologies and improving my skills.
+        </p>
         <div className="self-center">
           <Link href="/pdf/cv.pdf" target="_blank" download="gustavoylc-cv.pdf">
             <Button>Download CV</Button>
