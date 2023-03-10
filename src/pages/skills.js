@@ -10,13 +10,6 @@ import {
   TailwindCSSIcon,
   MaterialUIIcon,
   NextJSIcon,
-  NodeJSIcon,
-  ExpressIcon,
-  MongoDBIcon,
-  MySQLIcon,
-  PostgreSQLIcon,
-  DockerIcon,
-  SequelizeIcon,
   GitIcon,
 } from '@components/Icons';
 import Skill from '@components/Skill';
@@ -68,27 +61,6 @@ function Skills() {
         </Skill>
         <Skill name="NextJS">
           <NextJSIcon />
-        </Skill>
-        <Skill name="NodeJS">
-          <NodeJSIcon />
-        </Skill>
-        <Skill name="Express">
-          <ExpressIcon />
-        </Skill>
-        <Skill name="Sequelize">
-          <SequelizeIcon />
-        </Skill>
-        <Skill name="MongoDB">
-          <MongoDBIcon />
-        </Skill>
-        <Skill name="MySQL">
-          <MySQLIcon />
-        </Skill>
-        <Skill name="PostgreSQL">
-          <PostgreSQLIcon />
-        </Skill>
-        <Skill name="Docker">
-          <DockerIcon />
         </Skill>
         <Skill name="Git">
           <GitIcon />
