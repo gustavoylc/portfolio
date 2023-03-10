@@ -1,15 +1,16 @@
 import NavBar from '@components/NavBar';
-import { Dosis } from '@next/font/google';
+import { Poppins } from '@next/font/google';
 
-const dosis = Dosis({
+const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '700', '800'],
-  variable: '--font-dosis',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-poppins',
+  display: 'swap',
 });
 
 function Layout({ children }) {
   return (
-    <main className={`${dosis.variable} font-sans `}>
+    <main className={`${poppins.variable} font-sans`}>
       <header>
         <NavBar />
       </header>
@@ -21,7 +22,7 @@ function Layout({ children }) {
                   md:short:h-full md:short:items-start 
                   md:tall:h-screen md:tall:items-center
                   lg:short:h-full lg:short:items-start
-                  lg:tall:h-screen lg:tall:items-center"
+                  lg:tall:h-screen lg:tall:items-center font-normal"
       >
         {children}
       </main>
