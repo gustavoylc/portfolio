@@ -46,7 +46,7 @@ function NavBar() {
         </Link>
       </motion.div>
       <motion.ul
-        className="md:flex md:gap-5 md:items-center text-xl hidden"
+        className="md:flex md:gap-5 md:items-center hidden"
         initial={{ x: 400, opacity: 0, scale: 0.8 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.2 }}
