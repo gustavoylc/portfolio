@@ -23,7 +23,7 @@ function MobileMenu({ isOpen, routes, currentRoute, handleToggle }) {
   return (
     <div className="relative h-screen">
       <motion.div
-        className={`absolute top-0 right-0 w-[305px] bg-gray-100 shadow-lg rounded-md h-full bg-zinc-900  ${
+        className={`absolute top-0 right-0 w-[305px] bg-gray-100 shadow-lg rounded-md h-full bg-[#0f1521]  ${
           isOpen ? 'block' : 'hidden'
         }`}
         initial={{ x: '100%' }}
