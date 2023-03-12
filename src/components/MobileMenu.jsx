@@ -23,7 +23,7 @@ function MobileMenu({ isOpen, routes, currentRoute, handleToggle }) {
   return (
     <div className="relative h-screen">
       <motion.div
-        className={`absolute top-0 right-0 w-[305px] bg-gray-100 shadow-lg rounded-md h-full  ${
+        className={`absolute top-0 right-0 w-[305px] bg-gray-100 shadow-lg rounded-md h-full bg-zinc-900  ${
           isOpen ? 'block' : 'hidden'
         }`}
         initial={{ x: '100%' }}
@@ -41,7 +41,7 @@ function MobileMenu({ isOpen, routes, currentRoute, handleToggle }) {
             staggerChildren: 0.1,
           }}
         >
-          <ul className="p-4 flex flex-col gap-5 text-gray-700">
+          <ul className="p-4 flex flex-col gap-5 text-gray-500">
             {routes.map((route) => (
               <li key={route.text} onClick={handleToggle}>
                 <NavLink
