@@ -41,7 +41,7 @@ function MobileMenu({ isOpen, routes, currentRoute, handleToggle }) {
             staggerChildren: 0.1,
           }}
         >
-          <ul className="p-4 flex flex-col gap-5 text-gray-500">
+          <ul className="p-5 flex flex-col gap-5 text-gray-400 text-xl">
             {routes.map((route) => (
               <li key={route.text} onClick={handleToggle}>
                 <NavLink
