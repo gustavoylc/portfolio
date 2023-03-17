@@ -15,7 +15,6 @@ function Projects() {
           },
         },
       }}
-      className="h-screen pt-28"
     >
       <h1 className="text-[#3da6e5]">Projects</h1>
     </motion.div>

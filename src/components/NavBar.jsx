@@ -14,6 +14,10 @@ const routes = [
     text: 'About',
   },
   {
+    to: '/experience',
+    text: 'Experience',
+  },
+  {
     to: '/projects',
     text: 'Projects',
   },
