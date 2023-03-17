@@ -33,7 +33,7 @@ function MobileMenu({ isOpen, routes, currentRoute, handleToggle }) {
         ref={ref}
       >
         <motion.div
-          className="px-2 py-2 space-y-1"
+          className="space-y-1"
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
@@ -43,11 +43,12 @@ function MobileMenu({ isOpen, routes, currentRoute, handleToggle }) {
         >
           <ul className="p-5 flex flex-col gap-5 text-gray-400 text-xl">
             {routes.map((route) => (
-              <li key={route.text} onClick={handleToggle}>
+              <li key={route.text} onClick={handleToggle} className="w-full">
                 <NavLink
                   href={route.to}
                   text={route.text}
                   isActive={currentRoute === route.to}
+                  isMobileMenu={true}
                 />
               </li>
             ))}
