@@ -4,7 +4,7 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import { WavingHandIcon } from '@components/Icons';
 import { SocialIcon } from 'react-social-icons';
 import socialNetworks from '@/utils/socialNetworks';
-import Perfil from '../../public/perfil.png';
+import Perfil from '../../public/perfil.jpg';
 
 function Home() {
   const [text] = useTypewriter({
